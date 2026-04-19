@@ -10,7 +10,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-20 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400 mb-8">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Now supporting TikTok, YouTube Shorts &amp; Facebook Reels
+            Now supporting TikTok, YouTube Shorts, Facebook Reels &amp; Instagram
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
@@ -20,7 +20,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Actracia Studio helps creators publish short-form videos to TikTok, YouTube Shorts, and Facebook Reels — all from the command line.
+            Actracia Studio helps creators publish short-form videos to TikTok, YouTube Shorts, Facebook Reels, and Instagram — all from the command line.
           </p>
 
           <div className="flex items-center justify-center gap-4 mb-16">
@@ -71,7 +71,7 @@ export default function Home() {
           <p className="text-gray-400 max-w-xl mx-auto">Publish to all major short-form video platforms with a single command.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* TikTok */}
           <div className="group relative bg-[#1a1a1a] rounded-2xl border border-white/5 p-8 hover:border-white/15 transition overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-pink-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition" />
@@ -119,6 +119,23 @@ export default function Home() {
                 <span className="text-[10px] px-2 py-1 bg-white/5 rounded-full text-gray-400">Graph API v25</span>
                 <span className="text-[10px] px-2 py-1 bg-white/5 rounded-full text-gray-400">Page Reels</span>
                 <span className="text-[10px] px-2 py-1 bg-white/5 rounded-full text-gray-400">Long-lived Token</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Instagram */}
+          <div className="group relative bg-[#1a1a1a] rounded-2xl border border-white/5 p-8 hover:border-white/15 transition overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-500/10 to-pink-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition" />
+            <div className="relative">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-pink-500/20">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Instagram Reels</h3>
+              <p className="text-sm text-gray-400 mb-4">Publish Reels to your Instagram profile via Graph API. Auto-share to Feed.</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-[10px] px-2 py-1 bg-white/5 rounded-full text-gray-400">Graph API</span>
+                <span className="text-[10px] px-2 py-1 bg-white/5 rounded-full text-gray-400">Reels</span>
+                <span className="text-[10px] px-2 py-1 bg-white/5 rounded-full text-gray-400">Business Account</span>
               </div>
             </div>
           </div>
