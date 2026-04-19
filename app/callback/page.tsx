@@ -13,11 +13,11 @@ function CallbackContent() {
   if (error) {
     return (
       <div className="max-w-2xl mx-auto px-6 py-16 text-center">
-        <div className="p-8 rounded-lg border border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950">
-          <h1 className="text-2xl font-bold mb-4 text-red-700 dark:text-red-400">Authorization Failed</h1>
-          <p className="text-red-600 dark:text-red-400 mb-2">Error: {error}</p>
+        <div className="p-8 rounded-2xl border border-red-500/20 bg-red-500/5">
+          <h1 className="text-2xl font-bold mb-4 text-red-400">Authorization Failed</h1>
+          <p className="text-red-400 mb-2">Error: {error}</p>
           {errorDescription && (
-            <p className="text-sm text-red-500">{errorDescription}</p>
+            <p className="text-sm text-red-400/70">{errorDescription}</p>
           )}
         </div>
       </div>
@@ -27,12 +27,12 @@ function CallbackContent() {
   if (code) {
     return (
       <div className="max-w-2xl mx-auto px-6 py-16 text-center">
-        <div className="p-8 rounded-lg border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950">
-          <h1 className="text-2xl font-bold mb-4 text-green-700 dark:text-green-400">Authorization Successful!</h1>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+        <div className="p-8 rounded-2xl border border-green-500/20 bg-green-500/5">
+          <h1 className="text-2xl font-bold mb-4 text-green-400">Authorization Successful!</h1>
+          <p className="text-sm text-gray-400 mb-4">
             Copy the authorization code below and paste it into your application:
           </p>
-          <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-md font-mono text-sm break-all select-all cursor-pointer border">
+          <div className="bg-black/30 p-4 rounded-xl font-mono text-sm break-all select-all cursor-pointer border border-white/10">
             {code}
           </div>
           {state && (
@@ -48,9 +48,9 @@ function CallbackContent() {
 
   return (
     <div className="max-w-2xl mx-auto px-6 py-16 text-center">
-      <div className="p-8 rounded-lg border border-gray-200 dark:border-gray-800">
+      <div className="p-8 rounded-2xl border border-white/10 bg-white/5">
         <h1 className="text-2xl font-bold mb-4">OAuth Callback</h1>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-gray-400">
           Waiting for authorization... If you were not redirected here from a login page, please start the authorization flow from your application.
         </p>
       </div>

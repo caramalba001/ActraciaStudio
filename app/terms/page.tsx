@@ -7,10 +7,16 @@ export const metadata: Metadata = {
 export default function TermsOfService() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold mb-8">Terms of Service</h1>
-      <p className="text-sm text-gray-500 mb-8">Last updated: April 19, 2026</p>
+      <div className="mb-10">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400 mb-4">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Legal
+        </div>
+        <h1 className="text-3xl font-bold mb-3">Terms of Service</h1>
+        <p className="text-sm text-gray-500">Last updated: April 19, 2026</p>
+      </div>
 
-      <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+      <div className="space-y-8 text-gray-300 leading-relaxed">
         <section>
           <h2 className="text-xl font-semibold mb-3">1. Acceptance of Terms</h2>
           <p>
@@ -23,7 +29,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-xl font-semibold mb-3">2. Description of Service</h2>
           <p>
-            Actracia is a content management platform that allows users to upload, manage, and publish video content to social media platforms including TikTok. The Service uses third-party APIs to facilitate content publishing on your behalf.
+            Actracia is a content management platform that allows users to upload, manage, and publish video content to social media platforms including TikTok, YouTube, and Facebook. The Service uses third-party APIs to facilitate content publishing on your behalf.
           </p>
         </section>
 

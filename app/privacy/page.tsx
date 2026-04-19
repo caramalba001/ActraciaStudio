@@ -7,10 +7,16 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
-      <p className="text-sm text-gray-500 mb-8">Last updated: April 19, 2026</p>
+      <div className="mb-10">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400 mb-4">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Legal
+        </div>
+        <h1 className="text-3xl font-bold mb-3">Privacy Policy</h1>
+        <p className="text-sm text-gray-500">Last updated: April 19, 2026</p>
+      </div>
 
-      <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+      <div className="space-y-8 text-gray-300 leading-relaxed">
         <section>
           <h2 className="text-xl font-semibold mb-3">1. Introduction</h2>
           <p>
@@ -44,10 +50,12 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-xl font-semibold mb-3">4. Third-Party Services</h2>
           <p>
-            Our service integrates with third-party platforms including TikTok. When you connect your account, you authorize us to access certain data through their APIs. These third-party services have their own privacy policies, and we encourage you to review them:
+            Our service integrates with third-party platforms including TikTok, YouTube, and Facebook. When you connect your account, you authorize us to access certain data through their APIs. These third-party services have their own privacy policies, and we encourage you to review them:
           </p>
           <ul className="list-disc list-inside mt-2 space-y-1">
-            <li><a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" className="underline">TikTok Privacy Policy</a></li>
+            <li><a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" className="underline text-purple-400 hover:text-purple-300">TikTok Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/privacy" className="underline text-purple-400 hover:text-purple-300">Google/YouTube Privacy Policy</a></li>
+            <li><a href="https://www.facebook.com/privacy/policy/" className="underline text-purple-400 hover:text-purple-300">Facebook/Meta Privacy Policy</a></li>
           </ul>
         </section>
 
