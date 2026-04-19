@@ -17,7 +17,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-xl">
           <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2.5 group">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-sm font-bold text-white shadow-lg shadow-purple-500/25 group-hover:shadow-purple-500/40 transition">A</div>
+              <img src="/logo.png" alt="Actracia" className="w-8 h-8 rounded-lg shadow-lg shadow-purple-500/25 group-hover:shadow-purple-500/40 transition" />
               <span className="text-lg font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Actracia</span>
             </a>
             <div className="flex items-center gap-6 text-sm">
@@ -32,7 +32,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-6 py-10">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-2.5">
-                <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-md flex items-center justify-center text-[10px] font-bold text-white">A</div>
+                <img src="/logo.png" alt="Actracia" className="w-6 h-6 rounded-md" />
                 <span className="text-sm font-semibold text-gray-400">Actracia Studio</span>
               </div>
               <div className="flex items-center gap-6 text-xs text-gray-500">

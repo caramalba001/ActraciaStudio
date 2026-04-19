@@ -180,17 +180,17 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { icon: "⚡", title: "CLI First", desc: "Upload from terminal with full parameter control" },
-            { icon: "🔑", title: "Token Manager", desc: "Auto-refresh expired tokens, save to .env" },
-            { icon: "📦", title: "Multi-Platform", desc: "TikTok, YouTube, Facebook from one codebase" },
-            { icon: "🔒", title: "Secure OAuth", desc: "Industry-standard OAuth 2.0 flows" },
-            { icon: "🔄", title: "Auto Refresh", desc: "Tokens refresh automatically before uploads" },
-            { icon: "📁", title: "Organized", desc: "Clean folder structure per platform" },
-            { icon: "🐍", title: "Pure Python", desc: "No complex dependencies, just requests" },
-            { icon: "📋", title: "Open Source", desc: "Full source code on GitHub" },
+            { title: "CLI First", desc: "Upload from terminal with full parameter control", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>) },
+            { title: "Token Manager", desc: "Auto-refresh expired tokens, save to .env", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>) },
+            { title: "Multi-Platform", desc: "TikTok, YouTube, Facebook from one codebase", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>) },
+            { title: "Secure OAuth", desc: "Industry-standard OAuth 2.0 flows", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>) },
+            { title: "Auto Refresh", desc: "Tokens refresh automatically before uploads", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>) },
+            { title: "Organized", desc: "Clean folder structure per platform", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>) },
+            { title: "Pure Python", desc: "No complex dependencies, just requests", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>) },
+            { title: "Open Source", desc: "Full source code on GitHub", icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>) },
           ].map((f) => (
             <div key={f.title} className="bg-[#1a1a1a] rounded-xl border border-white/5 p-5 hover:border-white/10 transition">
-              <div className="text-2xl mb-3">{f.icon}</div>
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg flex items-center justify-center text-purple-400 mb-3">{f.icon}</div>
               <h3 className="font-semibold text-sm mb-1">{f.title}</h3>
               <p className="text-xs text-gray-500">{f.desc}</p>
             </div>
