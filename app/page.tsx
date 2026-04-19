@@ -29,6 +29,15 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="text-center mb-12">
+        <a
+          href="/demo"
+          className="inline-block px-8 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition text-lg"
+        >
+          View App Demo →
+        </a>
+      </section>
+
       <section className="text-center text-sm text-gray-500">
         <p>
           <a href="/privacy" className="underline">Privacy Policy</a>

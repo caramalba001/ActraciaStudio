@@ -18,6 +18,7 @@ export default function RootLayout({
           <nav className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/" className="text-xl font-bold">Actracia</a>
             <div className="flex gap-6 text-sm">
+              <a href="/demo" className="hover:underline font-semibold text-blue-500">Demo</a>
               <a href="/privacy" className="hover:underline">Privacy Policy</a>
               <a href="/terms" className="hover:underline">Terms of Service</a>
             </div>
